@@ -5,6 +5,10 @@ body {
   font-family: 'Nunito Sans', sans-serif;
 }
 
+#root{
+  height: 100vh;
+}
+
 .navbar-container{
   /* padding-top: 10px;
   padding-bottom: 10px; */
@@ -17,6 +21,7 @@ body {
 .countries{
   background-color: hsl(0, 0%, 98%);
   padding-top: 50px;
+  height: inherit;
 }
 
 .search-container{
@@ -24,11 +29,12 @@ body {
   position: relative;
 }
 
+.back-btn,
 .search-input,
-#regionDropDown{
+.region-dropdown{
   border: none;
   border-radius: 5px;
-  box-shadow: 1px 1px 10px rgba(0,0,0,0.1);
+  box-shadow: 1px 1px 10px rgba(0,0,0,0.2);
 }
 
   .search-icon{
@@ -51,15 +57,18 @@ body {
       font-weight: 600;
     }
   
-  #regionDropDown{
-    background-color: #fff;
+  .region-dropdown{
     width: 200px;
-    height: 50px;
   }
 
 .countries-container a{
   color: hsl(200, 15%, 8%);
   text-decoration: none;
+}
+
+.country,
+.country-flag img{
+  box-shadow: 1px 1px 10px rgba(0,0,0,0.2);
 }
 
 .country{
@@ -70,9 +79,9 @@ body {
 .country-flag img{
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  object-fit: cover;
+  object-fit: fill;
   width: 100%;
-  height: 200px;
+  height: 175px;
 }
 
 .country-title{
@@ -93,3 +102,12 @@ body {
   font-weight: 600;
 }
 
+.back-btn{
+  background-color: #fff;
+  width: 130px;
+  height: 40px;
+}
+
+.single-country-container{
+  margin-top: 50px;
+}
