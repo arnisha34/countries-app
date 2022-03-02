@@ -47,7 +47,7 @@ export default function Country(props) {
                     </div>
                 </div>
                 <div className='row'>
-                    <div><span>Border Countries</span> {country.borders.map(border => <Link to={country.name} key={border} className="border-code">{border}</Link>)}</div>
+                    <div><span>Border Countries</span> {country.borders.map(border => <button key={border} className="border-code">{border}</button>)}</div>
                 </div>
             </div>
         </div>
