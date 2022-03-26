@@ -28,7 +28,7 @@ export default function Country(props) {
             </div>
             <div className='col-md-6 d-flex flex-column justify-content-center px-5'>
                 <div className='row'>
-                    <div className='single-country-title col'>
+                    <div className='single-country-title col mb-4'>
                         <h2>{country.name}</h2>
                     </div>
                 </div>
@@ -46,8 +46,10 @@ export default function Country(props) {
                         <div><span>Languages:</span> {country.Languages}</div>
                     </div>
                 </div>
-                <div className='row'>
-                    <div><span>Border Countries</span> {country.borders.map(border => <button key={border} className="border-code">{border}</button>)}</div>
+                <div className='single-country-info row'>
+                    <div className='col'>
+                        <div><span>Border Countries</span> {country.borders.map(border => <button key={border} className="border-code">{border}</button>)}</div>
+                    </div>
                 </div>
             </div>
         </div>

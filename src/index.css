@@ -5,23 +5,26 @@ body {
   font-family: 'Nunito Sans', sans-serif;
 }
 
-#root{
-  height: 100vh;
-}
-
 .navbar-container{
-  /* padding-top: 10px;
-  padding-bottom: 10px; */
   border-bottom: 2px solid rgba(0,0,0,0.13);
 }
+
   .logo h4{
     font-weight: 800;
   }
 
+  .dm-toggle:hover{
+    cursor: pointer;
+  }
+
+  .dm-toggle span{
+    font-weight: 600;
+  }
+
 .countries{
-  background-color: hsl(0, 0%, 98%);
-  padding-top: 50px;
-  height: inherit;
+  background-color: hsl(0, 0%, 95%);
+  padding: 50px 0 100px;
+  height: 100vh;
 }
 
 .search-container{
@@ -85,13 +88,15 @@ body {
 }
 
 .country-title{
+  box-sizing: border-box;
   font-size: 18px;
   font-weight: 800;
   padding: 30px 20px 20px;
+  height: 75px;
 }
 
 .country-info{
-  padding: 0 20px 50px;
+  padding: 30px 20px 30px;
 }
 
 .country-info > div{
@@ -110,4 +115,32 @@ body {
 
 .single-country-container{
   margin-top: 50px;
+}
+
+  .single-country-title h2{
+    font-weight: 700;
+  }
+
+  .single-country-info div{
+    margin-bottom: 5px;
+  }
+
+    .single-country-info span{
+      font-weight: 600;
+    }
+
+/* Dark Mode */
+
+
+.dark.navbar-container{
+  background-color: #2B3743;
+  color: #fff;
+}
+
+.dark.countries{
+  background-color: #212D37;
+}
+
+.dark .single-country-container{
+  color: #fff;
 }
